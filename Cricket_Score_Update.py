@@ -14,5 +14,4 @@ while True:
             socre = i.text
             print(socre)
             break
-    break
- 
+    sleep(3600)
