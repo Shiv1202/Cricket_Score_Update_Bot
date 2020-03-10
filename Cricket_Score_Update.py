@@ -9,6 +9,7 @@ while True:
         r = requests.get(url)
     soup = BeautifulSoup(r.text, 'html.parser')
     data = soup.find_all('description')
+    # print(data)
     for i in data:
         if "India" in str(i.text):
             socre = i.text
